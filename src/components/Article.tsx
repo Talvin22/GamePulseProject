@@ -23,11 +23,11 @@ const Article: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="single-article">
       <h1>{article.title}</h1>
-      <h2>{article.short}</h2>
-      <img src={article.image} alt={article.title} />
-      <p>{article.text}</p>
+      <h2 className= "single-article-header">{article.short}</h2>
+      <img className= "single-article-image" src={article.image} alt={article.title} />
+      <p className= "single-article-paragraph">{article.text}</p>
     </div>
   );
 };

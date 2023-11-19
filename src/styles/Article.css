@@ -5,23 +5,16 @@ h1 {
     margin-left: 10%;
 }
 
-h2 {
+.single-article-header {
     color: white;
     margin-left: 10%;
 }
 
-p {
+.single-article-paragraph {
     color: white;
     margin-left: 10%;
 }
 
-img {
+.single-article-image {
     margin-left: 10%;
 }
-
-
-@media only screen and (max-width: 768px) {
-    img {
-        max-width: 60%;
-    }
-}  

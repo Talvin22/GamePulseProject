@@ -9,17 +9,16 @@
 }
 
 .article-preview {
+  width: 417px;
+  height: 239px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #09022857; /* 13131B */
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
-  width: 80%;
   margin-top: 50px;
-  margin-left: 50px;
   position: relative;
   color: white;
 }
@@ -27,7 +26,17 @@
 .article-image {
   width: 100%;
   height: 100%;
-  margin-right: 100px;
+  position: relative;
+}
+
+.article-title {
+  margin: 0;
+  padding-top: 6px;
+}
+
+.article-text {
+  margin: 0;
+  padding: 10px 0 5px 0;
 }
 
 .article-image img {
@@ -37,7 +46,9 @@
 }
 
 .article-content {
+  display: block;
   position: absolute;
+  height: 30%;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -45,6 +56,7 @@
   background: linear-gradient(#09022857, #090228);
   opacity: 0;
   transition: opacity 0.3s ease;
+  margin: auto;
 }
 
 
@@ -58,9 +70,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .article-preview {
-    width: 100%;
-  }
 
   .article-content {
     opacity: 1;

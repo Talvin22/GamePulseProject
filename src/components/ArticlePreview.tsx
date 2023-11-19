@@ -15,16 +15,16 @@ interface ArticlePreviewProps {
 const ArticlePreview: React.FC<ArticlePreviewProps> = ({ image, title, short, text, id }) => {
   return (
     <Link to={`/articles/${id}`} className="article-preview-link">
-      <div className="article-preview">
-        <div className="article-image">
-          <img src={image} alt="Article" />
+        <div className="article-preview">
+          <div className="article-image">
+            <img src={image} alt="Article" />
+            <div className="article-content">
+              <h2 className="article-title">{title}</h2>
+              <p className="article-text">{short}</p>
+            </div>
+          </div>
         </div>
-        <div className="article-content">
-          <h2 className="article-title">{title}</h2>
-          <p className="article-text">{short}</p>
-        </div>
-      </div>
-    </Link>
+     </Link>
   );
 };
 
