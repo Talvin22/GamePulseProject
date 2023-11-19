@@ -1,0 +1,82 @@
+/* NavigationBar.css */
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  z-index: 10;
+  height: 200px;
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px 20px; 
+  box-sizing: border-box;
+}
+
+.navbar-logo img {
+  max-height: 100px;
+  width: auto;
+  margin: 20px; 
+  transition: 1000ms;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.navbar-item {
+  margin: 20px;
+}
+
+.navbar-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  transition: 1000ms;
+}
+
+.navbar-item a:hover {
+  text-decoration: none;
+  font-size: 250%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 200px;
+
+  }
+
+
+  .navbar-content {
+    
+    flex-direction: column;
+  }
+
+  .navbar-logo img {
+    margin-left: 100px;
+    margin-bottom: 10px; 
+  }
+
+  .navbar-list {
+    margin-top: 10px; 
+  }
+
+  .navbar-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

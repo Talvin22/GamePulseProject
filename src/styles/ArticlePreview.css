@@ -1,0 +1,69 @@
+/* ArticlePreview.css */
+
+.article-preview-container {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #09022857; /* 13131B */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+  color: white;
+}
+
+.article-image {
+  width: 100%;
+  height: 100%;
+  margin-right: 100px;
+}
+
+.article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(#09022857, #090228);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.article-preview:hover .article-content {
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .article-preview-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .article-preview {
+    width: 100%;
+  }
+
+  .article-content {
+    opacity: 1;
+    height: auto;
+  }
+}

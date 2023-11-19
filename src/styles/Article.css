@@ -1,0 +1,27 @@
+/* Article.css */
+
+h1 {
+    color: white;
+    margin-left: 10%;
+}
+
+h2 {
+    color: white;
+    margin-left: 10%;
+}
+
+p {
+    color: white;
+    margin-left: 10%;
+}
+
+img {
+    margin-left: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    img {
+        max-width: 60%;
+    }
+}  
